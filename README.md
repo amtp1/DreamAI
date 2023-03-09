@@ -16,13 +16,13 @@ uvicorn main:app --host localhost --port 8000 --reload
 
 ### Get Styles
 
-```shell
+```http
 GET /getStyles
 ```
 
 ### Generate Image
 
-```shell
+```http
 GET /generateImage/programmer/84
 ```
 
