@@ -7,7 +7,6 @@ API_KEY = "AIzaSyDCvp5MTJLUdtBYEKYWXJrlLzu1zuKM6Xw"
 STYLE_URL = "https://paint.api.wombo.ai/api/styles/"
 
 def createToken():
-    global apiKey
     s = requests.Session()
     r = s.post("https://firebaseinstallations.googleapis.com/v1/projects/paint-prod/installations",
             headers={"Content-Type": "application/json", "x-goog-api-key": API_KEY}, json={
